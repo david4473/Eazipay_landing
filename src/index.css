@@ -1,0 +1,84 @@
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    font-family: aeon, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+  
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+  
+    --primary: #11453b;
+    --secondary-strawberry: #ea4e4b;
+    --secondary-army: #b4a572;
+    --text-heading-color: #292A29;
+    --font-20: 1.25rem;
+    --font-64: 4rem;
+    --font-16: 1rem;
+    --font-18: 1.125rem;
+    --font-12: 0.75rem;
+    --font-28: 1.75rem;
+    --font-56: 3.5rem;
+    --header-btn-shadow: 0 8px 16px 0 rgba(17, 69, 59, 0.20); 
+  }
+
+  @font-face {
+    font-family: Aeon;
+    src: url("./assets/fonts/AeonikTRIAL-Regular.otf") format("opentype");
+  }
+
+  @font-face {
+    font-family: mellow-regular;
+    src: url("./assets/fonts/MADEMellowPERSONALUSE-Regular.otf") format("opentype");
+  }
+
+  @font-face {
+    font-family: mellow-500;
+    src: url("./assets/fonts/MADEMellowPERSONALUSE-Medium.otf") format("opentype");
+  }
+  
+  #app {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+ .header__button{
+  @apply px-11 py-2 rounded-3xl
+ }
+
+ .hero__icon_wrapper{
+  @apply bg-[#F2F1F1] w-12 aspect-square rounded-[50%] p-6 relative
+ }
+
+ .hero__icons{
+  @apply absolute z-10 top-2/4 bottom-2/4 translate-x-[-50%] translate-y-[-50%]
+ }
+
+ .hero__store_button{
+  @apply flex items-center gap-3 w-40 aspect-[5/2] text-left p-2 shadow-2xl rounded-lg
+ }
+
+ .wave__section{
+  margin-left: -150px;
+  margin-right: -128px;
+ }
+
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      color: #213547;
+      background-color: #ffffff;
+    }
+    a:hover {
+      color: #747bff;
+    }
+  }
+  
